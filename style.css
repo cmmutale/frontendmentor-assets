@@ -1,0 +1,131 @@
+:root *,
+:root *::after,
+:root *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root a {
+    text-decoration: none;
+}
+
+.content-wrapper {
+    padding: 2rem;
+}
+
+body {
+    background-color: #f2ebe3;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: 375px;
+    background-color: #fff;
+    color: #6c7289;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.75rem;
+}
+
+@media screen and (min-width: 640px) {
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 640px;
+    }
+}
+
+.card__image {
+    max-width: 100%;
+}
+
+.card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__content {
+    padding: 3vmax;
+}
+
+.card__content>* {
+    margin-bottom: 1rem;
+}
+
+.card__content>*:last-child {
+    margin-bottom: 0;
+}
+
+.card__description {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+
+.card__title {
+    font-family: "Fraunces", serif;
+    color: #1c232b;
+    font-size: 2rem;
+    text-wrap: balance;
+}
+
+.card__body {
+    line-height: 1.7;
+    text-wrap: pretty;
+}
+
+.card__footer>* {
+    margin-bottom: 1rem;
+}
+
+.card__footer>*:last-child {
+    margin-bottom: 0;
+}
+
+.button {
+    display: flex;
+    height: 2.5rem;
+    background: #3c8067;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+}
+
+.button__icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+.button__l-icon .button__icon {
+    margin-right: 0.5rem;
+}
+
+.text--enhance {
+    font-size: 2rem;
+    font-family: "Fraunces", serif;
+    color: #3c8067;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.text--strike {
+    text-decoration: strike;
+}
+
+.attribution {
+    margin-top: 2rem;
+}
